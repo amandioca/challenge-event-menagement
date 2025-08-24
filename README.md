@@ -13,7 +13,7 @@ Desenvolva um sistema de gerenciamento de eventos para uma empresa que organiza 
 
 O sistema precisa ser modular, escalável e baseado em microsserviços, permitindo que novos módulos sejam adicionados no futuro sem impactar os existentes.
 
-### Objetivos do Challenge
+## Objetivos do Challenge
 1. Criar microsserviços que simulem um sistema real de eventos, incluindo:
 - Registro de eventos
 - Inscrição de participantes
@@ -26,7 +26,7 @@ O sistema precisa ser modular, escalável e baseado em microsserviços, permitin
 3. Implementar persistência e cache eficientes, mensageria, segurança e observabilidade.
 4. Criar testes unitários e de integração para validar o comportamento crítico do sistema.
 
-### Fluxo de Dados Entre Microsserviços
+## Fluxo de Dados Entre Microsserviços
 #### Event Service
 - Recebe requisições REST para criar, atualizar ou consultar eventos.
 - Publica eventos de criação/atualização em Kafka/RabbitMQ (event.created, event.updated).
@@ -48,7 +48,7 @@ O sistema precisa ser modular, escalável e baseado em microsserviços, permitin
 - Armazena dados em Elasticsearch para consultas rápidas.
 - Gera relatórios diários, mensais ou por evento.
 
-### Requisitos Técnicos Detalhados
+## Requisitos Técnicos Detalhados
 
 #### Linguagem & Frameworks
 - Java 17+
@@ -84,7 +84,7 @@ O sistema precisa ser modular, escalável e baseado em microsserviços, permitin
 - Integração: Testcontainers (PostgreSQL, Kafka, Redis)
 - Cobertura mínima sugerida: 70%
 
-### Critérios de Avaliação Detalhados
+## Critérios de Avaliação Detalhados
 
 1. **Funcionalidade**
     - Serviços implementados corretamente, fluxo de inscrição e notificações funcionando.
@@ -107,7 +107,7 @@ O sistema precisa ser modular, escalável e baseado em microsserviços, permitin
     - Implementação de sagas ou fallback para falhas de inscrição.
     - Kubernetes manifests para deploy (opcional).
 
-### Entregáveis
+## Entregáveis
 - Repositório Git com:
 	- Microsserviços dockerizados
 	- Scripts de criação de banco de dados
